@@ -1,0 +1,44 @@
+
+body, ul, li , p  {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.flex {
+    background-color: black;
+    display: flex;
+    /*Quebra linhas conforme a tela*/
+    flex-wrap: wrap;
+    /*Justica os espaços entre itens*/
+    justify-content: space-between;
+    padding: 20px;
+    /*Alinha os itens em um posição*/
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 12px;
+}
+
+.menu li a {
+    display: block;
+    padding: 6.5px;
+    background: #006bcf;
+}
+
+
