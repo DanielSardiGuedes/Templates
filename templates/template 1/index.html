@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Sardi Guedes</title>
+
+    <link rel="stylesheet" href="css/p1.css">
+
+    <script>
+
+        function share() {
+            if (navigator.share !== undefined) {
+                navigator.share({
+                    title: 'Portifólio Daniel Sardi Guedes',
+                    text: 'Gestor de Trafégo e Desenvolvedor de Sites',
+                    url: 'https://danielsardiguedes.github.io/Portifolio/',
+                })
+                    .then(() => console.log('Successful share'))
+                    .catch((error) => console.log('Error sharing', error));
+            }
+        }
+    </script>
+
 </head>
+
 <body>
-    
+    <main>
+
+        <header>
+            <img src="https://danielsardiguedes.com.br/img/foto%20de%20perfil.png" alt="Foto de Perfil">
+            <strong>
+                <h1>Daniel Sardi Guedes</h1>
+            </strong>
+        </header>
+
+        <ul class="categorias">
+            <li class="i1">Quem sou ?</li>
+            <li class="i2">Serviços</li>
+            <li class="i3">Como Falar comigo</li>
+        </ul>
+
+        <div style="text-align:center" class="mobile">
+            <p>
+                <a href="javascript:void(0)" onclick="share()">
+                    <img width="30" height="30" src="https://ayltoninacio.com.br/img/s/21w50.jpg" alt="">
+                    <br>
+                </a>
+                Compartilhe
+            </p>
+        </div>
+    </main>
 </body>
+
 </html>
