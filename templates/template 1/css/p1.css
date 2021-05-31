@@ -8,19 +8,35 @@ body{
 main{
     background-color: whitesmoke;
     padding: 10px;
+    width: 600px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
 }
 
 .categorias {
     display: flex;
-    justify-content:center ;
+    justify-content:space-around ;
     list-style-type: none;
 }
 
-li{
-    width: 130px;
-    
+.categorias > div {
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10%;
 }
-.i1 {
-    background-color: red;
+    
+
+.btn {
+    background-color: rgb(147, 147, 248);
+
+
 }
 
+.btn:hover {
+    background-color: crimson;
+    box-shadow: 5px 5px 2px black;
+    color: white;
+}
